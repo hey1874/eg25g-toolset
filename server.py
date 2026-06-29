@@ -303,7 +303,6 @@ def api_mode():
         except:
             pass
         time.sleep(10)
-        global dev
         dev = find_device()
         return jsonify({"ok": f"已切到 {mode_name}"})
     except Exception as e:
