@@ -27,6 +27,18 @@ pip3 install pyusb
 
 ## 用法
 
+### Web 上位机
+
+```bash
+pip3 install flask
+python3 server.py
+# 浏览器打开 http://localhost:7878
+```
+
+仪表盘 + AT 终端 + 模式切换 + 短信，全在浏览器里操作。
+
+### CLI
+
 ```bash
 python3 eg25g.py info              # 查看模块信息
 python3 eg25g.py at "AT+CSQ"       # 发 AT 命令
